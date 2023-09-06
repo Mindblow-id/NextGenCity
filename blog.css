@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@font-face {
+    font-family: "Bruce Forever";
+    src: url("src/font/Bruce\ Forever.ttf");
+}
+
+@font-face {
+    font-family: 'BraveNewEraG98';
+    src: url('src/font/BraveNewEraG98-5XOj.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ethnocentric';
+    src: url("src/font/ethnocentric\ rg.otf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: "Ethnocentric", sans-serif;
+    background-color: #000000;
+    width: 100%;
+}
+
+p {
+    font-family: BraveNewEraG98;
+}
+
+header {
+    background: url("src/earth.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header>h1 {
+    font-size: 100px;
+    font-weight: 400;
+}
+
+header>h5 {
+    font-size: 40px;
+    font-family: 'BraveNewEraG98';
+    font-weight: 300;
+}
+
+section {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    margin-bottom: 283px;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    width: 300px;
+}
+
+.card>img {
+    width: 100%;
+    height: auto;
+}
+
+.card>h4 {
+    margin-top: 13px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.card>p {
+    margin-top: 10px;
+    text-indent: 50px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    header>h1 {
+        font-size: 75px;
+    }
+    header>h5 {
+        font-size: 30px;
+    }
+    section {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header>h1 {
+        font-size: 45px;
+    }
+    header>h5 {
+        font-size: 18px;
+    }
+    .card {
+        width: 300px;
+    }
+    section {
+        margin-top: 100px;
+    }
+}

@@ -25,13 +25,22 @@ const observer = new IntersectionObserver((entries) => {
         }
     })
 })
+let hiddenLeft = document.querySelectorAll(".hidden-left")
+const observerLeft = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show-left")
+
+        }
+    })
+})
+hiddenLeft.forEach((el) => observer.observe(el))
 
 hidden.forEach((el) => observer.observe(el))
 console.log(window.scrollY);
 let li = Array.from(document.getElementsByTagName('li'))
 let navbar = document.getElementById("navbar")
-let body = document.getElementsByTagName("body")[0]
-console.log(body.scrollTop);
+
 let lastScrollTop = 0
 window.addEventListener("scroll", function() {
 
@@ -64,3 +73,4 @@ li.forEach(value => {
 let copy = document.getElementById("slider").cloneNode(true)
 document.querySelector(".carousel").appendChild(copy)
 console.log(copy);
+
