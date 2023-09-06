@@ -1,3 +1,6 @@
-# Development Mode
+# NextGenCity
 
-Wait until we rilis the official
+Created By :
+#### Nyoman Bayu Surapati
+#### Muhammad Rasyid Ridho
+#### Deva Nanda Alfarizi
